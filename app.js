@@ -6,5 +6,6 @@ c.height = 350;
 document.body.appendChild(c);
 
 function loop() {
-    
+
+    requestAnimationFrame(loop);
 }

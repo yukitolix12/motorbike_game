@@ -5,8 +5,9 @@ c.height = 350;
 
 document.body.appendChild(c);
 
+var perm = [];
 var noise = x => {
-    
+    return;
 }
 
 function loop() {

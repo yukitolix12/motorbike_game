@@ -24,6 +24,10 @@ function loop() {
     ctx.fillStyle = "black";
 
     ctx.beginPath();
+
+    for (var i = 0; i < c.width; i++) {
+        ctx.lineTo(i, noise(i));
+    }
     requestAnimationFrame(loop);
 }
 

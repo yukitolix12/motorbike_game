@@ -28,6 +28,8 @@ function loop() {
     for (var i = 0; i < c.width; i++) {
         ctx.lineTo(i, noise(i));
     }
+
+    ctx.fill();
     requestAnimationFrame(loop);
 }
 

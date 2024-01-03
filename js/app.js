@@ -11,6 +11,8 @@ while (perm.length < 255) {
     while (perm.includes(val = Math.floor(Math.random() * 2() * 255)));
     perm.push(val);
 }
+
+var lerp = (a, b, c) => a + (b - a) * t;
 var noise = x => {
     return;
 }

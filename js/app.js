@@ -6,6 +6,7 @@ c.height = 350;
 document.body.appendChild(c);
 
 function loop() {
+    ctx.fillStyle = "#19f";
     ctx.fillRect(0, 0, c.width, c.height);
     requestAnimationFrame(loop);
 }

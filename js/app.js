@@ -8,13 +8,13 @@ document.body.appendChild(c);
 var perm = [];
 
 while (perm.length < 255) {
-    while (perm.includes(val = Math.floor(Math.random() * 2() * 255)));
+    while (perm.includes(val = Math.floor(Math.random() * 255)));
     perm.push(val);
 }
 
-var lerp = (a, b, c) => a + (b - a) * t;
+var lerp = (a, b, t) => a + (b - a) * t;
 var noise = x => {
-    return;
+    return lerp(perm[Math.floor(x)], perm[Math.cell(x)], x - Math.floor(x));
 }
 
 function loop() {

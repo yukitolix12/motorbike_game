@@ -19,6 +19,10 @@ var noise = x => {
     return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 }
 
+var player = new function() {
+    
+}
+
 var t = 0;
 function loop() {
 

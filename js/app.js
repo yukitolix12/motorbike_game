@@ -23,6 +23,10 @@ var player = new function() {
     this.x = c.width / 2;
     this.y = 0;
     this.rot = 0;
+
+    this.draw = function() {
+        
+    }
 }
 
 var t = 0;

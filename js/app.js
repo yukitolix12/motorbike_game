@@ -19,6 +19,7 @@ var noise = x => {
     return lerp(perm[Math.floor(x)], perm[Math.ceil(x)], x - Math.floor(x));
 }
 
+var t = 0;
 function loop() {
     ctx.fillStyle = "#19f";
     ctx.fillRect(0, 0, c.width, c.height);

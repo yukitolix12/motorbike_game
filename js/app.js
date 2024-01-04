@@ -25,6 +25,7 @@ var player = new function() {
     this.rot = 0;
 
     this.img = new Image();
+    this.img.src = "";
 
     this.draw = function() {
         ctx.drawImage()

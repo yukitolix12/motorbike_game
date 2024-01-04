@@ -26,6 +26,7 @@ function loop() {
     ctx.fillStyle = "black";
 
     ctx.beginPath();
+    ctx.moveTo(0, c.height);
 
     for (var i = 0; i < c.width; i++) {
         ctx.lineTo(i, noise(i));

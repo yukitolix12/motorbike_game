@@ -32,6 +32,8 @@ function loop() {
         ctx.lineTo(i, noise(i));
     }
 
+    ctx.lineTo(c.width, c.height);
+
     ctx.fill();
     requestAnimationFrame(loop);
 }

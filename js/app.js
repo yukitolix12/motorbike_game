@@ -29,7 +29,7 @@ function loop() {
     ctx.moveTo(0, c.height);
 
     for (var i = 0; i < c.width; i++) {
-        ctx.lineTo(i, noise(i));
+        ctx.lineTo(i, c.height - noise(i));
     }
 
     ctx.lineTo(c.width, c.height);

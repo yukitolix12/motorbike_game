@@ -32,7 +32,7 @@ function loop() {
     ctx.moveTo(0, c.height);
 
     for (var i = 0; i < c.width; i++) {
-        ctx.lineTo(i, c.height - noise(t + 1) * 0.25);
+        ctx.lineTo(i, c.height - noise(t + i) * 0.25);
     }
 
     ctx.lineTo(c.width, c.height);

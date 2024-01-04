@@ -12,7 +12,7 @@ while (perm.length < 255) {
     perm.push(val);
 }
 
-var lerp = (a, b, t) => a + (b - a) * t;
+var lerp = (a, b, t) => a + (b - a) * (1 - Math.cos(t * Math.PI)) / 2;
 
 var noise = x => {
     x = x * 0.01 % 255;

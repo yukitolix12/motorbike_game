@@ -35,6 +35,7 @@ var player = new function() {
             this.ySpeed -= 0.1;
         }
 
+        this.y -= this.ySpeed;
 
         ctx.save();
         ctx.translate(this.x, this.y);

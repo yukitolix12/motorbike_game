@@ -28,6 +28,8 @@ var player = new function() {
     this.img.src = "images/moto.png";
 
     this.draw = function() {
+        var p1 =
+
         ctx.save();
         ctx.translate(this.x, this.y);
         ctx.drawImage(this.img, -15, -15, 30, 30);

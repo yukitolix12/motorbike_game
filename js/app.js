@@ -28,7 +28,7 @@ var player = new function() {
     this.img.src = "images/moto.png";
 
     this.draw = function() {
-        var p1 = c.height - noise(t + i) * 0.25
+        var p1 = c.height - noise(t + this.x) * 0.25;
 
         ctx.save();
         ctx.translate(this.x, this.y);

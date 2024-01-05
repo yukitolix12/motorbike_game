@@ -22,6 +22,7 @@ var noise = x => {
 var player = new function() {
     this.x = c.width / 2;
     this.y = 0;
+    this.ySpeed = 0;
     this.rot = 0;
 
     this.img = new Image();
@@ -31,7 +32,7 @@ var player = new function() {
         var p1 = c.height - noise(t + this.x) * 0.25;
 
         if(p1 > this.y) {
-            
+            this.ySpeed -= 0.1;
         }
 
 

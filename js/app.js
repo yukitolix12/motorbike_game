@@ -30,7 +30,7 @@ var player = new function() {
     this.draw = function() {
         ctx.save();
         ctx.translate(this.x, this.y);
-        ctx.drawImage(this.img, 0, 0, 30, 30);
+        ctx.drawImage(this.img, -15, -15, 30, 30);
 
         ctx.restore();
     }

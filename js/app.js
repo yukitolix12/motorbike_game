@@ -30,6 +30,11 @@ var player = new function() {
     this.draw = function() {
         var p1 = c.height - noise(t + this.x) * 0.25;
 
+        if(p1 > this.y) {
+            
+        }
+
+
         ctx.save();
         ctx.translate(this.x, this.y);
         ctx.drawImage(this.img, -15, -15, 30, 30);

@@ -31,6 +31,8 @@ var player = new function() {
         ctx.save();
         ctx.translate(this.x, this.y);
         ctx.drawImage(this.img, this.x, 100, 30, 30);
+
+        ctx.restore();
     }
 }
 

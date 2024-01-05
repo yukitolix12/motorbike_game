@@ -33,6 +33,8 @@ var player = new function() {
 
         if(p1 > this.y) {
             this.ySpeed -= 0.1;
+        } else {
+            this.ySpeed = 0;
         }
 
         this.y -= this.ySpeed;

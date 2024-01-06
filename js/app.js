@@ -35,7 +35,7 @@ var player = new function() {
             this.ySpeed -= 0.1;
         } else {
             this.y = p1 - 15;
-            this.ySpeed = this.y - (p1 -12);
+            this.ySpeed = this.y - (p1 - 15);
         }
 
         this.y -= this.ySpeed;

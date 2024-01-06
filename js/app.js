@@ -51,7 +51,7 @@ var player = new function() {
 var t = 0;
 function loop() {
 
-    t += 1;
+    t += 5;
     ctx.fillStyle = "#19f";
     ctx.fillRect(0, 0, c.width, c.height);
 

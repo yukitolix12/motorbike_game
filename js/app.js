@@ -34,11 +34,11 @@ var player = new function() {
         if(p1 - 15 > this.y) {
             this.ySpeed += 0.1;
         } else {
-            this.ySpeed = this.y - (p1 - 15);
+            this.ySpeed -= this.y - (p1 - 15);
             this.y = p1 - 15;
         }
 
-        this.y -= this.ySpeed;
+        this.y += this.ySpeed;
 
         ctx.save();
         ctx.translate(this.x, this.y);

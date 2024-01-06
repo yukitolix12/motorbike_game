@@ -51,7 +51,7 @@ var player = new function() {
         this.y += this.ySpeed;
 
         if(grounded) {
-
+            this.rot -= (this.rot - angle) * 0.5;
         }
 
         ctx.save();

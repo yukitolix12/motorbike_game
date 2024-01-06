@@ -49,6 +49,10 @@ var player = new function() {
 
         this.y += this.ySpeed;
 
+        if(grounded) {
+            
+        }
+
         ctx.save();
         ctx.translate(this.x, this.y);
         ctx.rotate(this.rot);

@@ -39,6 +39,8 @@ var player = new function() {
         } else {
             this.ySpeed -= this.y - (p1 - 15);
             this.y = p1 - 15;
+
+            grounded = 1;
         }
 
         var angle = Math.atan2((p2 -15) - this.y, (this.x + 5) - this.x);

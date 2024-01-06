@@ -32,10 +32,10 @@ var player = new function() {
         var p1 = c.height - noise(t + this.x) * 0.25;
 
         if(p1 - 15 > this.y) {
-            this.ySpeed -= 0.1;
+            this.ySpeed += 0.1;
         } else {
-            this.y = p1 - 15;
             this.ySpeed = this.y - (p1 - 15);
+            this.y = p1 - 15;
         }
 
         this.y -= this.ySpeed;

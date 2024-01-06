@@ -24,6 +24,7 @@ var player = new function() {
     this.y = 0;
     this.ySpeed = 0;
     this.rot = 0;
+    this.rSpeed = 0;
 
     this.img = new Image();
     this.img.src = "images/moto.png";
@@ -50,7 +51,7 @@ var player = new function() {
         this.y += this.ySpeed;
 
         if(grounded) {
-            
+
         }
 
         ctx.save();

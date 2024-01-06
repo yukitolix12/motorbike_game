@@ -40,6 +40,8 @@ var player = new function() {
 
         var angle = Math.atan2((p2 -15) - this.y, (this.x + 5) - this.x);
 
+        this.rot = angle;
+
         this.y += this.ySpeed;
 
         ctx.save();

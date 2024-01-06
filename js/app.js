@@ -44,6 +44,7 @@ var player = new function() {
 
         ctx.save();
         ctx.translate(this.x, this.y);
+        ctx.rotate(this.rot);
         ctx.drawImage(this.img, -15, -15, 30, 30);
 
         ctx.restore();

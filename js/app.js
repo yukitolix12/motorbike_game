@@ -48,7 +48,7 @@ var player = new function() {
             playing = false;
             this.rSpeed = 5;
             k.ArrowUp = 1;
-            this.x -= speed * 2.5;
+            this.x -= speed * 5;
         }
 
         var angle = Math.atan2((p2 -15) - this.y, (this.x + 5) - this.x);

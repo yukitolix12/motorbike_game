@@ -45,7 +45,7 @@ var player = new function() {
         }
 
         if(grounded && Math.abs(this.rot) > Math.PI * 0.5) {
-            
+
         }
 
         var angle = Math.atan2((p2 -15) - this.y, (this.x + 5) - this.x);
@@ -76,6 +76,7 @@ var player = new function() {
 
 var t = 0;
 var speed = 0;
+var playing = true;
 var k = {ArrowUp: 0, ArrowDown: 0, ArrowLeft: 0, ArrowRight: 0};
 
 function loop() {

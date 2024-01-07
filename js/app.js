@@ -55,6 +55,7 @@ var player = new function() {
             this.rSpeed = this.rSpeed - (angle - this.rot);
         }
 
+        this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.5;
         this.rot += this.rSpeed * 0.1;
 
         ctx.save();

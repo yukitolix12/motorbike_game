@@ -68,7 +68,7 @@ var player = new function() {
 
 var t = 0;
 
-var k = {ArrowUp, ArrowDown, ArrowLeft, ArrowRight};
+var k = {ArrowUp: 0, ArrowDown: 0, ArrowLeft: 0, ArrowRight: 0};
 
 function loop() {
 

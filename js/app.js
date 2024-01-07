@@ -63,7 +63,7 @@ var player = new function() {
         }
 
         this.rSpeed += (k.ArrowLeft - k.ArrowRight) * 0.5;
-        this.rot += this.rSpeed * 0.1;
+        this.rot -= this.rSpeed * 0.1;
 
         if(this.rot > Math.PI) this.rot = -Math.PI;
         if(this.rot < -Math.PI) this.rot = Math.PI;

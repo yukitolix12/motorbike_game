@@ -57,7 +57,7 @@ var player = new function() {
 
         this.y += this.ySpeed;
 
-        if(grounded) {
+        if(grounded && playing) {
             this.rot -= (this.rot - angle) * 0.5;
             this.rSpeed = this.rSpeed - (angle - this.rot);
         }
